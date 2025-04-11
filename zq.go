@@ -5,12 +5,13 @@
 package dm
 
 import (
-	"dm/util"
 	"fmt"
 	"math"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/hellolib/dm-go-driver/v8/util"
 )
 
 const (
@@ -132,7 +133,7 @@ const (
 
 	Dm_build_1033 int32 = 0xFFFE - 3
 
-	Dm_build_1034 int32 = 0XFFFE - 4
+	Dm_build_1034 int32 = 0xFFFE - 4
 
 	Dm_build_1035 int32 = 0xFFFE
 

@@ -5,8 +5,9 @@
 package dm
 
 import (
-	"dm/util"
 	"strconv"
+
+	"github.com/hellolib/dm-go-driver/v8/util"
 )
 
 const (

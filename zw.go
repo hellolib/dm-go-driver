@@ -6,11 +6,12 @@
 package dm
 
 import (
-	"dm/util"
 	"math/rand"
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/hellolib/dm-go-driver/v8/util"
 )
 
 var rwMap sync.Map
@@ -166,7 +167,7 @@ func (rwc *rwCounter) increasePrimaryNtrx() {
 	rwc.ntrx_total++
 }
 
-//func (rwc *rwCounter) getStandbyNtrx(standby *DmConnection) int64 {
+// func (rwc *rwCounter) getStandbyNtrx(standby *DmConnection) int64 {
 //	key := standby.dmConnector.host + ":" + strconv.Itoa(int(standby.dmConnector.port))
 //	ret, ok := rwc.standbyNTrxMap[key]
 //	if !ok {
@@ -174,7 +175,7 @@ func (rwc *rwCounter) increasePrimaryNtrx() {
 //	}
 //
 //	return ret
-//}
+// }
 
 func (rwc *rwCounter) getStandbyId(standby *DmConnection) int32 {
 	key := standby.dmConnector.host + ":" + strconv.Itoa(int(standby.dmConnector.port))

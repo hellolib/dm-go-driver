@@ -5,7 +5,6 @@
 package dm
 
 import (
-	"dm/util"
 	"fmt"
 	"math"
 	"os"
@@ -15,6 +14,8 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/hellolib/dm-go-driver/v8/util"
 )
 
 type ExecuteTypeEnum int

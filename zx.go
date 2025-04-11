@@ -8,12 +8,13 @@ import (
 	"context"
 	"database/sql"
 	"database/sql/driver"
-	"dm/util"
 	"errors"
 	"io"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/hellolib/dm-go-driver/v8/util"
 )
 
 const (

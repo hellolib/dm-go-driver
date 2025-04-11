@@ -1,4 +1,4 @@
-module dm
+module github.com/hellolib/dm-go-driver/v8
 
 go 1.13
 

@@ -8,12 +8,13 @@ import (
 	"bytes"
 	"context"
 	"crypto/tls"
-	"dm/security"
 	"fmt"
 	"net"
 	"strconv"
 	"time"
 	"unicode/utf8"
+
+	"github.com/hellolib/dm-go-driver/v8/security"
 )
 
 const (
